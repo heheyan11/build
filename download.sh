@@ -13,11 +13,11 @@ nc="\e[0m"
 
 echo -e "${green}===> 开始下载...${nc}"
 cd $HOME
-wget -q https://raw.githubusercontent.com/heheyan11/build/master/master.zip
+wget -q https://github.com/heheyan11/build/blob/master/master.tar.gz -O laravel-ubuntu-init.tar.gz
 rm -rf laravel-ubuntu-init
-unzip master.zip
+tar zxf laravel-ubuntu-init.tar.gz
 mv laravel-ubuntu-init-master laravel-ubuntu-init
-rm -f master.zip
+rm -f laravel-ubuntu-init.tar.gz
 echo -e "${green}===> 下载完毕${nc}"
 echo ""
 echo -e "${green}安装脚本位于： ${HOME}/laravel-ubuntu-init${nc}"
